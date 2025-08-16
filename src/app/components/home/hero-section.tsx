@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function HomeHeroSection() {
   return (
-    <div className="w-full h-screen relative p-4">
-      <div className="w-full h-screen justify-center items-center flex flex-col gap-4 sm:gap-8 text-center">
+    <div className="w-full h-dvh relative p-4 overflow-x-hidden">
+      <div className="w-full h-full justify-center items-center flex flex-col gap-4 sm:gap-8 text-center">
         <Badge variant="outline" className="gap-1.5 rounded-full text-sm">
           <span
             className="size-1.5 rounded-full bg-white"
@@ -41,7 +41,7 @@ export default function HomeHeroSection() {
         </div>
       </div>
       <div className="h-full inset-0 absolute -z-1">
-        <DarkVeil warpAmount={0.6} />
+        <DarkVeil warpAmount={2} hueShift={15} speed={2} />
       </div>
     </div>
   );

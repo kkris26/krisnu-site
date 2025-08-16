@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* .h-dvh{
+  height: 100dvh;
+} */
