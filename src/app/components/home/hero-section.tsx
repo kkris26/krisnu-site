@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import DarkVeil from "@/rb/DarkVeil/DarkVeil";
 import Link from "next/link";
+import AnimatedButton from "../button/animation-button";
 
 export default function HomeHeroSection() {
   return (
@@ -23,8 +24,8 @@ export default function HomeHeroSection() {
         </p>
         <div className="flex gap-4 mt-4 ">
           <Button size="lg" variant={"default"} asChild>
-            <Link href="#projects" className="hover:underline">
-              View Projects
+            <Link href="#projects">
+              <AnimatedButton>Contact Me</AnimatedButton>
             </Link>
           </Button>
           <Button
@@ -33,9 +34,9 @@ export default function HomeHeroSection() {
             className="rounded-full"
             asChild
           >
-            <Link href="#contact" className="hover:underline">
+            <Link href="#contact">
               {" "}
-              Contact Me
+              <AnimatedButton>Contact Me</AnimatedButton>
             </Link>
           </Button>
         </div>

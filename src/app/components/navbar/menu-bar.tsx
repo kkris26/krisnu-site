@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/menubar";
 import { Menu, MessageCircle } from "lucide-react";
 import Link from "next/link";
+import AnimatedButton from "../button/animation-button";
 
 export function MenuBar() {
   const menuBar: MenuBar[] = [
@@ -26,7 +27,9 @@ export function MenuBar() {
               className=" hover:underline focus:bg-transparent"
               key={i}
             >
-              <Link href={m.path}>{m.menu}</Link>
+              <Link href={m.path}>
+                <AnimatedButton underline>{m.menu}</AnimatedButton>
+              </Link>
             </MenubarLabel>
           ))}
         </MenubarMenu>
