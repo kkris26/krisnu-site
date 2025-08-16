@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Menubar,
+  MenubarLabel,
   MenubarMenu,
   MenubarTrigger,
 } from "@/components/ui/menubar";
@@ -21,9 +22,12 @@ export function MenuBar() {
       <Menubar className="bg-transparent fixed rounded-full p-5 gap-6 top-4 backdrop-blur-sm z-1 hidden sm:flex">
         <MenubarMenu>
           {menuBar.map((m, i) => (
-            <MenubarTrigger className=" hover:underline bg-transparent" key={i}>
+            <MenubarLabel
+              className=" hover:underline focus:bg-transparent"
+              key={i}
+            >
               <Link href={m.path}>{m.menu}</Link>
-            </MenubarTrigger>
+            </MenubarLabel>
           ))}
         </MenubarMenu>
       </Menubar>

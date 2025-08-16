@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import DarkVeil from "@/rb/DarkVeil/DarkVeil";
 import Link from "next/link";
@@ -6,6 +7,13 @@ export default function HomeHeroSection() {
   return (
     <div className="w-full h-screen relative p-4">
       <div className="w-full h-screen justify-center items-center flex flex-col gap-4 sm:gap-8 text-center">
+        <Badge variant="outline" className="gap-1.5 rounded-full text-sm">
+          <span
+            className="size-1.5 rounded-full bg-white"
+            aria-hidden="true"
+          ></span>
+          welcome
+        </Badge>
         <h1 className="text-4xl sm:text-7xl font-bold">Hi, I’m Krisnu 👋</h1>
         <p className="text-sm sm:text-lg  max-w-2xl sm:text-neutral-300 text-neutral-100 ">
           A passionate <span className="font-semibold">Web Developer</span> who
